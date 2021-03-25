@@ -1,0 +1,16 @@
+<div class="form">
+    <h3> Account Registration</h3><br/>
+    <form [formGroup]="registrationRef" (ngSubmit)="registerAccount()">
+        <label for="">First Name: </label> <input type="text" formControlName="firstname">
+        <br/><br/><br/>
+        <label for="">Last Name: </label> <input type="text" formControlName="lastname">
+        <br/><br/><br/>
+        <label for="">Username: </label> <input type="text" formControlName="username">
+        <br/><br/><br/>
+        <label for="">Password: </label> <input type="password" formControlName="password">
+        <br/><br/>
+        <input type="submit" class="btn btn-primary" value="Register">
+        <input type="reset" class="btn btn-secondary" value="Reset">
+    </form>
+    {{msg}}
+</div>

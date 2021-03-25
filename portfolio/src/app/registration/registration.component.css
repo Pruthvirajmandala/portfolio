@@ -1,0 +1,14 @@
+.form{
+    margin: auto;
+    text-align: center;
+    font-size: larger;
+    font-style: italic;
+    text-decoration: wavy aqua;
+    text-shadow: azure;
+    padding-top: auto;
+    width: 500px;
+    height: 500px;
+    background-color:white;
+    border: 2px solid black;
+
+}

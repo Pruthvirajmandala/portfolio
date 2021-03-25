@@ -1,0 +1,20 @@
+
+#head{
+  text-align: left;
+  font-style: italic;
+  font-size: x-large;
+}
+input[type=text]{
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: lightblue;
+  }
+  input[type=password]{
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: lightblue;
+    }
