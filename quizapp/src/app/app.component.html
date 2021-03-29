@@ -1,0 +1,11 @@
+<div id=heading1>
+  <h1>Welcome to Online Quiz</h1>
+</div>
+  <div class="text-center">
+  <input class="btn btn-primary" type="button" [value]="b1" (click)="open()"/>
+  </div>
+  <hr/>
+  <div *ngIf="mark">
+    <app-quiz></app-quiz>
+  </div>
+</div>
