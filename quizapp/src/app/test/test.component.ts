@@ -61,10 +61,10 @@ export class TestComponent implements OnInit {
     }
   }
   resultColor():string{
-    let color:string = "red"
-    this.msg="You have not cleared the Test, Retake the test :)";
+    let color:string = "violet"
+    this.msg="You have not cleared the Test, Retake the test :(";
     if(this.numCorrect>=5){
-      color = "green"
+      color = "indigo"
       this.msg="You have cleared the test :)"
     }
     return color;
@@ -73,7 +73,7 @@ export class TestComponent implements OnInit {
   highlightAnswers(){
     for(let i=0;i<10;i++){
       document.getElementById(this.userAnswers[i].question+this.userAnswers[i].answer)!.style.backgroundColor = "yellow";
-      document.getElementById(this.answerKey[i].question+this.answerKey[i].answer)!.style.backgroundColor = "green";
+      document.getElementById(this.answerKey[i].question+this.answerKey[i].answer)!.style.backgroundColor = "Blue";
     }
   
   }

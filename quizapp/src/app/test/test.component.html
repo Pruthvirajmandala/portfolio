@@ -1,7 +1,7 @@
 <diV>
     <h2> General Knowledge </h2><br/>
 <div>
-    <div>
+    <div id=form1>
         <form *ngFor="let q of questions"> 
           {{q.question}} 
           <br/>
@@ -31,7 +31,7 @@
           <hr/>
         </form>  
       </div>
-        <input type="submit" value="Submit Answers" (click)="onSubmit()" [disabled]="click"/>
+        <input class="btn btn-warning" type="submit" value="Submit Answers" (click)="onSubmit()" [disabled]="click"/>
       <div *ngIf="resultFlag">
         <b [style.color]="resultColor()">Result: {{numCorrect}}/10</b>
         <p style="font-size:25px;"> {{msg}}</p>
