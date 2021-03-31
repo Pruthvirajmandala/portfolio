@@ -1,6 +1,5 @@
 export class test {
     constructor(
-                public questionid:number,
                 public question:string,
                 public answer1:string,
                 public answer2:string,
