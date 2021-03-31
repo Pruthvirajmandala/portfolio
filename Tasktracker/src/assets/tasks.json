@@ -1,0 +1,40 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "name": "online Test",
+      "task": "completed",
+      "deadline": "04/19/2021"
+    },
+    {
+      "id": 2,
+      "name": "online class",
+      "task": "not Completed",
+      "deadline": "04/01/2021"
+    },
+    {
+      "id": 3,
+      "name": "simplilearn",
+      "task": "completed",
+      "deadline": "2021-04-04"
+    },
+    {
+      "id": 4,
+      "name": "exam",
+      "task": "not completed",
+      "deadline": "2021-03-31"
+    },
+    {
+      "id": 5,
+      "name": "exam2",
+      "task": "not completed",
+      "deadline": "2021-04-19"
+    },
+    {
+      "id": 6,
+      "name": "Prepare DInner",
+      "task": "not completed",
+      "deadline": "2021-03-31"
+    }
+  ]
+}
