@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatBox</title>
+    <script src="/socket.io/socket.io.js"></script>              <!-- socket connection files -->
+    <script type="text/JavaScript">
+    var socket = io();      // socket for connection 
+    function fun() {                                                    // values are passed when function is called
+        var name = document.getElementById("name").value;
+        var message = document.getElementById("message").value;
+        socket.emit("chat",{"Name":name,"Message":message});
+
+        //that value you can emit to server. 
+    }
+    </script>
+    <style> 
+        input[type=text] {
+          width: 100%;
+          height: auto;
+          padding:50px;
+          margin: 8px 0;
+          box-sizing: border-box;
+          border:solid ,springgreen;
+          background-color:slategray;
+          color: white;
+        }
+        #h11{
+            text-align: center;
+            color:tomato;
+        }
+        </style>
+</head>
+<body>
+    <div id="h11">
+    <h1>Chat Interface</h1>
+    </div>
+    <form>
+        <label for="name"> Name</label>
+        <input type="text" id="name" ><br/>
+        <label for="name"> Message</label>
+        <input type="text" id="message" ><br/>
+        <input type="reset" value="send" onclick="fun()">
+    </form>
+</body>
+</html>
