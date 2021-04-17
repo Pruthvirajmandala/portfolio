@@ -8,7 +8,7 @@
     <script src="/socket.io/socket.io.js"></script>              <!-- socket connection files -->
     <script type="text/JavaScript">
     var socket = io();      // socket for connection 
-    function fun() {                                                    // values are passed when function is called
+    function fun(log) {                                                    // values are passed when function is called
         var name = document.getElementById("name").value;
         var message = document.getElementById("message").value;
         socket.emit("chat",{"Name":name,"Message":message});

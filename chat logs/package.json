@@ -9,6 +9,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "mongoose": "^5.12.4"
+    "express": "^4.17.1",
+    "express-ws": "^4.0.0",
+    "http": "0.0.1-security",
+    "mongoose": "^5.12.4",
+    "socket.io": "^4.0.1"
   }
 }
