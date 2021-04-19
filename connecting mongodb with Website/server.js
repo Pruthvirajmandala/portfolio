@@ -30,7 +30,7 @@ app.post("/saveDetails",(req,res)=> {                       //data is stored
 mongoClient.connect(url, {useUnifiedTopology: true },(err1,client)=>{
 if(!err1){
             let db = client.db("meanstack");
-    db.collection("Registered Courses").insertOne({_id:id,CourseName:name,Description:desc,amount:amount},(err2,result)=>{
+    db.collection("RegisteredCourses").insertOne({_id:id,CourseName:name,Description:desc,amount:amount},(err2,result)=>{
             if(!err2){
                 console.log(result.insertedCount);
             }else {
@@ -53,7 +53,7 @@ app.post("/updateDetails",(req,res)=> {                 //data updated
 mongoClient.connect(url, {useUnifiedTopology: true },(err1,client)=>{
 if(!err1){
             let db = client.db("meanstack");
-    db.collection("Registered Courses").updateOne({_id:id},{$set:{amount:amount}},(err2,result)=>{
+    db.collection("RegisteredCourses").updateOne({_id:id},{$set:{amount:amount}},(err2,result)=>{
         if(!err2){
 
             if(result.modifiedCount>0){
@@ -78,7 +78,7 @@ app.post("/deleteDetails",(req,res)=> {                         //data is delete
     mongoClient.connect(url,{ useUnifiedTopology: true },(err1,client)=> {
         if(!err1){
             let db = client.db("meanstack");
-            db.collection("Registered Courses").deleteOne({_id:id},(err2,result)=> {
+            db.collection("RegisteredCourses").deleteOne({_id:id},(err2,result)=> {
                 if(!err2){
                        if(result.deletedCount>0){
                             console.log("Data Deleted!!!")
@@ -108,7 +108,7 @@ app.get("/fetchDetails",(req,res)=> {                           //daat is fetche
     mongoClient.connect(url,{ useUnifiedTopology: true },(err1,client)=> {
       if(!err1){
        let db = client.db("meanstack");
-      let cursor = db.collection("Registered Courses").find().toArray(function(err, result) {
+      let cursor = db.collection("RegisteredCourses").find().toArray(function(err, result) {
         if (err) throw err;
         console.log("Updated");
           console.log(result.length)
